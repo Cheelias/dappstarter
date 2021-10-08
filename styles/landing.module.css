@@ -1,0 +1,39 @@
+.container {
+  padding: 16px;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  max-width: 22ch;
+  /* font-family: 'Montserrat'; */
+  font-weight: 600;
+  font-size: var(--title-text-size);
+}
+
+.description {
+  line-height: 1.5;
+  max-width: 50ch;
+  font-size: var(--description-text-size);
+}
+
+@media (min-width: 0) and (max-width: 800px) {
+  .main {
+    max-width: 600px;
+    padding: 1.5rem 16px;
+  }
+}
+
+@media (min-width: 800px) {
+  .main {
+    max-width: 600px;
+    padding: 5rem 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    max-width: 1000px;
+    padding: 5rem 16px;
+  }
+}

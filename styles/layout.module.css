@@ -1,0 +1,31 @@
+/* .protectivePadding {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 126px 1fr;
+}
+.footer {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .footer {
+    justify-content: center;
+  }
+}
+@media (min-width: 600px) {
+  .protectivePadding {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .protectivePadding {
+    padding: 0 80px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .protectivePadding {
+    padding: 0 200px;
+  }
+} */

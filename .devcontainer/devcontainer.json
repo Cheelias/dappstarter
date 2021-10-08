@@ -1,0 +1,74 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.183.0/containers/javascript-node
+{
+  "name": "Node.js",
+  "remoteEnv": {
+    "VARIANT": "14"
+  },
+  "build": {
+    "dockerfile": "Dockerfile",
+    // Update 'VARIANT' to pick a Node version: 12, 14, 16
+
+    "args": { "VARIANT": "14" }
+  },
+
+  // Set *default* container specific settings.json values on container create.
+  "settings": {
+    // "terminal.integrated.shell.linux": "/bin/zsh"
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "bash"
+      },
+      "zsh": {
+        "path": "zsh"
+      },
+      "fish": {
+        "path": "fish"
+      },
+      "tmux": {
+        "path": "tmux",
+        "icon": "terminal-tmux"
+      },
+      "pwsh": {
+        "path": "pwsh",
+        "icon": "terminal-powershell"
+      },
+      "zshbin": {
+        "path": "/usr/bin/zsh"
+      }
+    }
+  },
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "hookyqr.beautify",
+    "redhat.vscode-yaml",
+    // "ms-vsliveshare.vsliveshare",
+    "davidanson.vscode-markdownlint",
+    "eg2.vscode-npm-script",
+    "christian-kohler.npm-intellisense",
+    "eamodio.gitlens",
+    "ms-vscode.js-debug-nightly",
+    "robbowen.synthwave-vscode",
+    "esbenp.prettier-vscode",
+    "ibm.output-colorizer",
+    "vscode-icons-team.vscode-icons",
+    "graphql.vscode-graphql",
+    "dbaeumer.vscode-eslint",
+    "ms-azuretools.vscode-docker",
+    "msjsdiag.debugger-for-chrome",
+    "ldez.ignore-files",
+    "juanblanco.solidity"
+  ],
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "npm install",
+  // sysctl -w net.core.rmem_max=2500000
+
+  // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "node"
+}
